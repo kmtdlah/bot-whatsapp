@@ -35,8 +35,8 @@ console.log(color('[ CREATED BY CALIPH ]'))
 console.log(color('[ REPORT BUG ]', 'cyan'), color('https://clph.pw/reportbug', 'yellow'))
 console.log(color('[ SCRIPT BOT ]', 'cyan'), color('https://clph.pw/scriptbot', 'yellow'))
 if (opts.server) {
-  require('./server')(caliph, process.env.PORT || opts.server == true ? 8080 : opts.server)
-} else {
+  require('./server')(caliph, process.env.PORT || 8080)
+} else {q
 	
 	caliph.on('qr', async () => {
 console.log('Scan kode qr ini untuk menjalankan bot')
