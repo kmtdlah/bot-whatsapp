@@ -246,7 +246,7 @@ menu = `
 
 `.trim()
 var img = fs.readFileSync(global.thumb)
-caliph.sendMessage(m.chat, img, mType.image, { quoted: freply('Rikka-Botz WhatsApp', img), caption: menu })
+caliph.sendMessage(m.chat, img, mType.image, { quoted: freply(caliph.user.name, img), caption: menu })
 break 
 case prefix+'runtime':
 case prefix+'uptime':
